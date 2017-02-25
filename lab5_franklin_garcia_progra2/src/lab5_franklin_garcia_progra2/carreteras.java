@@ -11,14 +11,14 @@ package lab5_franklin_garcia_progra2;
  */
 public class carreteras {
     protected int numero;
-    protected double kilometros;
+    protected int kilometros;
     protected String inicio, c_final;
 
     public carreteras() {
         super();
     }
 
-    public carreteras(int numero, double kilometros, String inicio, String c_final) {
+    public carreteras(int numero, int kilometros, String inicio, String c_final) {
         this.numero = numero;
         this.kilometros = kilometros;
         this.inicio = inicio;
@@ -33,11 +33,11 @@ public class carreteras {
         this.numero = numero;
     }
 
-    public double getKilometros() {
+    public int getKilometros() {
         return kilometros;
     }
 
-    public void setKilometros(double kilometros) {
+    public void setKilometros(int kilometros) {
         this.kilometros = kilometros;
     }
 

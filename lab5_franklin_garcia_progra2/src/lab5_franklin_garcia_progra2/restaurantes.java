@@ -11,12 +11,12 @@ package lab5_franklin_garcia_progra2;
  */
 public class restaurantes  extends lugar{
 protected  String categoria;
-protected int calificacion;
+protected String calificacion;
     public restaurantes() {
         super();
     }
 
-    public restaurantes(String categoria, int calificacion, String nombre, String direccion, String entradas, String salida, int seguridad) {
+    public restaurantes(String categoria, String calificacion, String nombre, String direccion, String entradas, String salida, int seguridad) {
         super(nombre, direccion, entradas, salida, seguridad);
         this.categoria = categoria;
         this.calificacion = calificacion;
@@ -30,17 +30,17 @@ protected int calificacion;
         this.categoria = categoria;
     }
 
-    public int getCalificacion() {
+    public String getCalificacion() {
         return calificacion;
     }
 
-    public void setCalificacion(int calificacion) {
+    public void setCalificacion(String calificacion) {
         this.calificacion = calificacion;
     }
 
     @Override
     public String toString() {
-        return nombre;
+        return categoria;
     }
     
 }
